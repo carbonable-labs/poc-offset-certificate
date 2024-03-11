@@ -1,0 +1,17 @@
+[package]
+name = "offset_certificate"
+version = "0.1.0"
+authors = ["Tekkac <tekkac@proton.me>"]
+license = "Apache-2.0"
+license-file = "LICENSE"
+keywords = ["metadata", "carbonable", "carbon offset", "offset certificate"]
+homepage = "https://github.com/carbonable-labs/poc-offset-certificate"
+
+[[target.starknet-contract]]
+sierra = true
+
+[dependencies]
+starknet = ">=2.6.0"
+openzeppelin = { git = "https://github.com/OpenZeppelin/cairo-contracts.git", tag="v0.10.0" }
+graffiti = { git = "https://github.com/ponderingdemocritus/graffiti", rev = "bc569531791dbc71c6cd8d9bc154c34eedad31fe" }
+snforge_std = { git = "https://github.com/foundry-rs/starknet-foundry.git", tag = "v0.19.0" }
