@@ -2,6 +2,11 @@
 version = 1
 
 [[package]]
+name = "alexandria_storage"
+version = "0.3.0"
+source = "git+https://github.com/tekkac/alexandria?branch=fix%2Fcairo-version-2.6.2#bf67650e356d0aa936882b9bbdcb4bd5a33622f4"
+
+[[package]]
 name = "graffiti"
 version = "0.1.0"
 source = "git+https://github.com/ponderingdemocritus/graffiti?rev=bc569531791dbc71c6cd8d9bc154c34eedad31fe#bc569531791dbc71c6cd8d9bc154c34eedad31fe"
@@ -10,6 +15,7 @@ source = "git+https://github.com/ponderingdemocritus/graffiti?rev=bc569531791dbc
 name = "offset_certificate"
 version = "0.1.0"
 dependencies = [
+ "alexandria_storage",
  "graffiti",
  "openzeppelin",
  "snforge_std",
@@ -18,7 +24,7 @@ dependencies = [
 [[package]]
 name = "openzeppelin"
 version = "0.10.0"
-source = "git+https://github.com/OpenZeppelin/cairo-contracts.git?tag=v0.10.0#89cc02b74258f71a4516e8837593077a1515d137"
+source = "git+https://github.com/OpenZeppelin/cairo-contracts.git?tag=v0.10.0#d77082732daab2690ba50742ea41080eb23299d3"
 
 [[package]]
 name = "snforge_std"
