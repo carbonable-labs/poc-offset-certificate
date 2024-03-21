@@ -14,8 +14,6 @@ trait IOffsetCertificate<ContractState> {
 
 #[starknet::contract]
 mod OffsetCertificatePoc {
-    use core::traits::Into;
-    use openzeppelin::token::erc721::interface::IERC721Metadata;
     use openzeppelin::introspection::src5::SRC5Component;
     use openzeppelin::token::erc721::ERC721Component;
 
