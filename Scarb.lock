@@ -4,7 +4,7 @@ version = 1
 [[package]]
 name = "alexandria_storage"
 version = "0.3.0"
-source = "git+https://github.com/tekkac/alexandria?branch=fix%2Fcairo-version-2.6.2#bf67650e356d0aa936882b9bbdcb4bd5a33622f4"
+source = "git+https://github.com/keep-starknet-strange/alexandria?tag=cairo-v2.5.4#e7b69575f92076e96a83a76efa6bed3c32a15f9f"
 
 [[package]]
 name = "graffiti"
@@ -28,5 +28,5 @@ source = "git+https://github.com/OpenZeppelin/cairo-contracts.git?tag=v0.10.0#d7
 
 [[package]]
 name = "snforge_std"
-version = "0.19.0"
-source = "git+https://github.com/foundry-rs/starknet-foundry.git?tag=v0.19.0#a3391dce5bdda51c63237032e6cfc64fb7a346d4"
+version = "0.18.0"
+source = "git+https://github.com/foundry-rs/starknet-foundry.git?tag=v0.18.0#48f909a56b08cbdc5ca6a21a836b0fbc6c36d55b"
