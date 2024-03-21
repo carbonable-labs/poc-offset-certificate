@@ -10,7 +10,7 @@ use offset_certificate::contract::{IOffsetCertificateDispatcher, IOffsetCertific
 
 #[test]
 fn test_mint_certificate() {
-    let contract = declare("OffsetCertificatePoc");
+    let contract = declare('OffsetCertificatePoc');
 
     let contract_address = contract.deploy(@array![]).unwrap();
 
