@@ -3,12 +3,12 @@ on:
   push:
   pull_request:
 jobs:
-  check:
+  build-starknet-contracts:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: software-mansion/setup-scarb@v1
         with:
-          scarb-version: "2.6.2"
+          tool-versions: .tool-versions
       - run: scarb fmt --check
       - run: scarb build

@@ -3,11 +3,14 @@ on:
   push:
   pull_request:
 jobs:
-  check:
+  test-starknet-contracts:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: software-mansion/setup-scarb@v1
         with:
-          scarb-version: "2.6.2"
+          tool-versions: .tool-versions
+      - uses: foundry-rs/setup-snfoundry@v3
+        with:
+          tool-versions: .tool-versions
       - run: scarb test

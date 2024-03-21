@@ -2,6 +2,11 @@
 version = 1
 
 [[package]]
+name = "alexandria_storage"
+version = "0.3.0"
+source = "git+https://github.com/keep-starknet-strange/alexandria?tag=cairo-v2.5.4#e7b69575f92076e96a83a76efa6bed3c32a15f9f"
+
+[[package]]
 name = "graffiti"
 version = "0.1.0"
 source = "git+https://github.com/ponderingdemocritus/graffiti?rev=bc569531791dbc71c6cd8d9bc154c34eedad31fe#bc569531791dbc71c6cd8d9bc154c34eedad31fe"
@@ -10,6 +15,7 @@ source = "git+https://github.com/ponderingdemocritus/graffiti?rev=bc569531791dbc
 name = "offset_certificate"
 version = "0.1.0"
 dependencies = [
+ "alexandria_storage",
  "graffiti",
  "openzeppelin",
  "snforge_std",
@@ -18,9 +24,9 @@ dependencies = [
 [[package]]
 name = "openzeppelin"
 version = "0.10.0"
-source = "git+https://github.com/OpenZeppelin/cairo-contracts.git?tag=v0.10.0#89cc02b74258f71a4516e8837593077a1515d137"
+source = "git+https://github.com/OpenZeppelin/cairo-contracts.git?tag=v0.10.0#d77082732daab2690ba50742ea41080eb23299d3"
 
 [[package]]
 name = "snforge_std"
-version = "0.19.0"
-source = "git+https://github.com/foundry-rs/starknet-foundry.git?tag=v0.19.0#a3391dce5bdda51c63237032e6cfc64fb7a346d4"
+version = "0.18.0"
+source = "git+https://github.com/foundry-rs/starknet-foundry.git?tag=v0.18.0#48f909a56b08cbdc5ca6a21a836b0fbc6c36d55b"

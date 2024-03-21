@@ -9,9 +9,18 @@ homepage = "https://github.com/carbonable-labs/poc-offset-certificate"
 
 [[target.starknet-contract]]
 sierra = true
+casm = true
 
 [dependencies]
-starknet = ">=2.6.0"
+starknet = ">=2.5.4"
 openzeppelin = { git = "https://github.com/OpenZeppelin/cairo-contracts.git", tag="v0.10.0" }
 graffiti = { git = "https://github.com/ponderingdemocritus/graffiti", rev = "bc569531791dbc71c6cd8d9bc154c34eedad31fe" }
-snforge_std = { git = "https://github.com/foundry-rs/starknet-foundry.git", tag = "v0.19.0" }
+snforge_std = { git = "https://github.com/foundry-rs/starknet-foundry.git", tag = "v0.18.0" }
+alexandria_storage = { git = "https://github.com/keep-starknet-strange/alexandria", tag = "cairo-v2.5.4" }
+# alexandria_storage = { git = "https://github.com/tekkac/alexandria", branch = "fix/cairo-version-2.6.2" }
+
+[tool.snforge]
+exit_first = true
+
+[scripts]
+test = "snforge test"
